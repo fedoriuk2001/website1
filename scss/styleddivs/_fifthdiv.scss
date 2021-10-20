@@ -1,0 +1,177 @@
+// * --------------Fonts--------------
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+// * --------------Variables--------------
+
+$myFont: Poppins;
+$myWidth400: 400;
+$myWidth500: 500;
+$myWidth600: 600;
+$myWidth700: 700;
+$myFontColor: #2C3F58;
+
+// ! ----------------------------Fifth-Div---------------------------- !
+
+.fifthrow {
+    width: 95%;
+    overflow: hidden;
+
+    .first_column {
+      padding-top: 30px;
+      padding-left: 135px;
+      span {
+        font-family: $myFont;
+        font-style: normal;
+        font-weight: $myWidth500;
+        font-size: 25px;
+        color: $myFontColor;
+      }
+    }
+
+    .second_column {
+      padding-top: 38px;
+      padding-left: 35px;
+      padding-right: 50px;
+      .firsttext {
+        font-family: $myFont;
+        font-style: normal;
+        font-weight: $myWidth500;
+        font-size: 16px;
+        color: rgba(44, 63, 88, 0.8);
+      }
+
+      .secondtext {
+        font-family: $myFont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        color: rgba(44, 63, 88, 0.8);
+      }
+    }
+    .third_column {
+      background: url("../images/run.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border: 0.5px solid rgba(0, 0, 0, 0.5);
+    }
+}
+
+.fifthrow__column {
+    float: left;
+    width: 33.33%;
+    height: 260px; 
+
+  }
+
+  .fifthrow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+  @media screen and (max-width: 825px) {
+    .fifthrow {
+      width: 100%;
+      .third_column {
+        width: 90%;
+        margin-left: 40px;
+      }
+    }
+
+    .first_column {
+      height: 55px;
+    }
+
+    .second_column {
+      height: 180px;
+      // padding-left: ;
+    }
+
+    .fifthrow__column {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 890px) {
+    .fifthrow {
+      
+      .first_column {
+          padding: 20px 0 0 40px;
+      }
+      .second_column {
+        padding: 25px 0 0 40px;
+      }
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .fifthrow {
+    .second_column {
+      .secondtext {
+        margin-top: 30px;
+      }
+    }
+}
+}
+
+@media only screen and (max-width: 1020px) and (min-width: 960px) {
+  .fifthrow {
+    .second_column {
+      padding: 25px 0 0 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) and (min-width: 890px) {
+  .fifthrow {
+      
+    .first_column {
+        padding: 20px 0 0 40px;
+    }
+    .second_column {
+      padding: 25px 0 0 40px;
+    }
+}
+}
+
+@media only screen and (max-width: 560px) {
+  .fifthrow {
+    .third_column {
+      width: 85%;
+      height: 240px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) and (min-width: 320px) {
+  .fifthrow {
+    .third_column {
+      width: 80%;
+      height: 220px;
+    }
+  }
+}
+
+@media only screen and (max-width: 470px) and (min-width: 400px) {
+  .fifthrow {
+    .second_column {
+      height: 230px;
+    }
+}
+}
+
+@media only screen and (max-width: 400px) {
+
+    .fifthrow {
+        
+        .first_column {
+            padding: 15px 0 0 40px;
+            height: 85px;
+        }
+        .second_column {
+          height: 260px;
+        }
+    }
+}

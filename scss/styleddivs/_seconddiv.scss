@@ -1,0 +1,84 @@
+// * --------------Fonts--------------
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+// * --------------Variables--------------
+
+$myFont: Poppins;
+$myWidth400: 400;
+$myWidth500: 500;
+$myWidth600: 600;
+$myWidth700: 700;
+$myFontColor: #2C3F58;
+
+// ! ----------------------------Second-Div---------------------------- !
+.seconddiv { 
+    overflow:hidden;
+
+    div {
+        min-height: 330px;
+     }
+}
+
+#one {
+   
+    float:left; 
+    width:40%;
+    padding: 70px 30px 10px 135px;
+
+    span {
+        
+        font-family: $myFont;
+        font-style: normal;
+        font-weight: $myWidth600;
+        font-size: 35px;
+        line-height: 45px;
+        color: $myFontColor;
+    }
+}
+
+#two { 
+    overflow:hidden;
+    min-height:320px;
+    padding: 80px 135px 40px 40px;
+
+    span {
+        
+        font-family: $myFont;
+        font-style: $myWidth500;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 29px;
+        color: #2A2B30;
+    }
+}
+  
+@media only screen and (max-width: 890px) {
+
+    .seconddiv {
+        div {
+            min-height: 230px;
+        }
+    }
+
+     #one { 
+      float: none;
+      margin-right:0;
+      width:auto;
+      padding: 60px 40px 0px 40px;
+      
+    }
+
+    #two {
+        min-height: 200px;
+        padding: 0px 40px 30px 40px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    #two {
+        padding: 20px 40px 40px 40px;
+    }
+}

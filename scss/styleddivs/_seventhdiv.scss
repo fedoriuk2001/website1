@@ -1,0 +1,141 @@
+// * --------------Fonts--------------
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+// * --------------Variables--------------
+
+$myFont: Poppins;
+$myWidth400: 400;
+$myWidth500: 500;
+$myWidth600: 600;
+$myWidth700: 700;
+$myFontColor: #2C3F58;
+
+// ! ----------------------------Seventhth-Div---------------------------- !
+
+.seventhdiv {
+    width: 100%;
+    overflow: hidden;
+    .seventhdiv__text {
+        text-align: center;
+        padding: 40px 0 0 0;
+        span {
+            font-family: $myFont;
+            font-style: normal;
+            font-weight: $myWidth500;
+            font-size: 25px;
+            color: $myFontColor;
+        }
+    }
+
+    .seventhdiv__inputformandlogo {
+        padding: 20px;
+    }
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    resize: vertical;
+    background-color: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    
+  }
+
+  #subject {
+      height: 120px;
+      resize: none;
+  }
+
+  input[type=text]::placeholder, #subject::placeholder {
+    color: #231F20;
+    letter-spacing: 1px;
+    font-family: $myFont; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+}
+  
+  input[type=submit] {
+    background-color: #57B6DD;
+    border-radius: 6px;
+    color: white;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    height: 60px;
+    float: right;
+    margin-top: 20px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #35a1cc;
+    transition: all .5s;
+  }
+
+  #logobottom {
+      width: 210px;
+      height: 75px;
+  }
+
+  
+  .col-30 {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+  }
+
+  .col-30-logo {
+    padding-left: 135px;
+  }
+
+  .col-30-buttons {
+    padding: 20px 10px 20px 0;
+  }
+  
+  .col-40 {
+    margin-top: 6px;
+    float: left;
+    width: 40%;
+    padding: 20px 135px 0 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
+  @media only screen and (max-width: 1200px) {
+    .col-30-logo {
+        padding-left: 0px;
+      }
+
+    .col-40 {
+        padding: 20px 0px 0 20px;
+    }
+      
+  }
+
+  @media screen and (max-width: 740px) {
+    .col-30, .col-40, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    #subject {
+        margin-bottom: 15px;
+    }
+
+    .col-40 {
+        padding: 0;
+    }
+
+    .col-30-buttons { 
+        padding: 20px 0;
+    }
+  }

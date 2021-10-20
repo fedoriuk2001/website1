@@ -1,0 +1,159 @@
+// * --------------Fonts--------------
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+// * --------------Variables--------------
+
+$myFont: Poppins;
+$myWidth400: 400;
+$myWidth500: 500;
+$myWidth600: 600;
+$myWidth700: 700;
+$myFontColor: #2C3F58;
+
+// ! ----------------------------Header-and-Nav---------------------------- !
+// * Mobile View
+
+.header {
+    height: 100%;
+    background: url("../images/shutterstock.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    nav {
+        z-index: 2;
+        position: fixed;
+        height: 75px;
+        width: 100%;
+        background-image: linear-gradient(to bottom, rgba(0, 0 , 0, 0.7) , rgba(0, 0 , 0, 0));
+        display: flex;
+        justify-content: space-between;
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            width: auto;
+            margin: 0;
+
+            .logo {
+                margin-left: 20px;
+                width: 130px;
+            }
+        }
+        .nav-list {
+            position: fixed;
+            width: 100%;
+            height: 0vh;
+            top: 75px;
+            background-image: linear-gradient(to top, rgba(0, 0 , 0, 0.3) , rgba(0, 0 , 0, 0));
+            float: right;
+            text-align: center;
+            transition: all .5s;
+
+            li {
+                opacity: 0;
+                line-height: 30px;
+                margin: 50px 0;
+                transition: all .5s;
+
+                a {
+                    color: white;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    cursor: default;
+                    font-family: $myFont;
+                    font-weight: $myWidth600;
+                    letter-spacing: 2.5px;
+                    
+
+                    &:hover {
+                        color: $myFontColor;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+        
+        .hamburger-btn {
+            display: block;
+            float: right;
+            margin-right: 40px;
+            margin-top: 20px;
+        }
+
+        #check {
+            display: none;            
+        }
+
+        #check:checked ~ .nav-list {
+            height: 100vh;
+        }
+
+        #check:checked ~ .nav-list li {
+            opacity: 1;
+        }
+
+        #check:checked ~ .nav-list li a {
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+
+// * Desktop View
+
+@media only screen and (min-width: 900px) {
+
+    .header {
+
+        nav {
+            height: 100px;
+            background-color: transparent;
+            .logo-container {
+                margin-left: 25px;
+
+                .logo {
+                    margin-left: 25px;
+                    width: 180px;
+                    cursor: pointer;
+                }
+            }
+
+            .hamburger-btn {
+                display: none;
+            }
+            .nav-list {
+                position: relative;
+                height: 100px;
+                top: 0;
+                background: none;
+                float: right;
+                text-align: right;
+                margin-right: 25px;
+                transition: none;
+                cursor: default;
+
+                li {
+                    display: inline-block;
+                    opacity: 1;
+                    line-height: 100px;
+                    margin: 0 20px;
+                    transition: all 0.5s;
+
+                    a { 
+                        cursor: pointer;
+
+                        &:hover {
+                            color: $myFontColor;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}

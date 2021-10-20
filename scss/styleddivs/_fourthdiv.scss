@@ -1,0 +1,54 @@
+// * --------------Fonts--------------
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+// * --------------Variables--------------
+
+$myFont: Poppins;
+$myWidth400: 400;
+$myWidth500: 500;
+$myWidth600: 600;
+$myWidth700: 700;
+$myFontColor: #2C3F58;
+
+// ! ----------------------------Fourth-Div---------------------------- !
+
+.fourthdiv { 
+    overflow:hidden;
+    float: left;
+    clear: right;
+
+    div {
+        width: 100%;
+        min-height: 100px;
+        padding: 0 0 0 135px;
+
+        span {
+            font-family: $myFont;
+            font-style: normal;
+            font-weight: $myWidth600;
+            font-size: 35px;
+            color: $myFontColor;
+        }
+     }
+}
+
+@media only screen and (max-width: 890px) {
+    .fourthdiv {
+        div {
+            min-height: 90px;
+            padding: 0 0 20px 40px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    .fourthdiv {
+        div {
+            min-height: 90px;
+            padding: 0 0 20px 40px;
+        }
+    }
+}

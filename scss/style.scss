@@ -1,0 +1,30 @@
+// * --------------Imports--------------
+@import "styledcomponents/_burgerbutton.scss";
+
+@import "_nullstyle.scss";
+
+@import "styleddivs/_navandfirstdiv.scss";
+@import "styleddivs/_seconddiv.scss";
+@import "styleddivs/_thirddiv.scss";
+@import "styleddivs/_fourthdiv.scss";
+@import "styleddivs/_squareandline.scss";
+@import "styleddivs/_fifthdiv.scss";
+@import "styleddivs/_sixthdiv.scss";
+@import "styleddivs/_seventhdiv.scss";
+@import "styleddivs/_eighthdiv.scss";
+@import "styleddivs/_myfooter.scss";
+
+
+// * --------------Fonts--------------
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+// * --------------Variables--------------
+
+$myFont: Poppins;
+$myWidth400: 400;
+$myWidth500: 500;
+$myWidth600: 600;
+$myWidth700: 700;
+$myFontColor: #2C3F58;
+

@@ -1,0 +1,103 @@
+// * --------------Fonts--------------
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+// * --------------Variables--------------
+
+$myFont: Poppins;
+$myWidth400: 400;
+$myWidth500: 500;
+$myWidth600: 600;
+$myWidth700: 700;
+$myFontColor: #2C3F58;
+
+// ! ----------------------------Sixth-Div---------------------------- !
+
+.sixthdiv {
+    background-color: rgba(196, 196, 196, 0.1);
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        grid-gap: 1.5rem;
+        margin: 5rem 135px;
+      }
+  }
+
+  .grid > div {
+    background: white;
+    padding: 1rem;
+    position: relative;
+  }
+  .grid > div::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  .grid > div img {
+    position: absolute;
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+@media only screen and (max-width: 890px) {
+    .sixthdiv {
+        .grid {
+            margin: 5rem 65px;
+        }
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .sixthdiv {
+        .grid {
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        }
+    }
+}
+
+
+.sixthdivtext { 
+    overflow:hidden;
+    float: left;
+    clear: right;
+
+    div {
+        width: 100%;
+        min-height: 100px;
+        padding: 35px 0 0 135px;
+
+        span {
+            font-family: $myFont;
+            font-style: normal;
+            font-weight: $myWidth600;
+            font-size: 35px;
+            color: $myFontColor;
+        }
+     }
+}
+
+@media only screen and (max-width: 890px) {
+    .sixthdivtext {
+        div {
+            min-height: 90px;
+            padding: 35px 0 20px 40px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    .sixthdivtext {
+        div {
+            min-height: 90px;
+            padding: 35px 0 20px 40px;
+        }
+    }
+}
